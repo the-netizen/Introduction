@@ -1,0 +1,217 @@
+@font-face{
+    font-family: 'Medodica';
+    src:url('assets/MedodicaRegular.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Karmatic';
+    src: url('assets/ka1.ttf') format('truetype');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Medodica', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    /* left: 50%;
+    right: 50%;
+    transform: translateX(-50%); */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    margin-top: -50px;
+    /* height: 300px; */
+}
+
+#banner-heart-l{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 65px;
+    /* z-index: 10; */
+}
+#banner-heart-r{
+    position: absolute;
+    top:42%;
+    right: 10%;
+    width: 65px;
+    /* z-index: 10; */
+}
+
+h2{
+    /* font-family: 'Karmatic'; */
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    font-style:bold;
+    /* color: rgb(237, 88, 13); */
+    color: rgb(110, 117, 160);
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 5.5rem;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    /* width: 100%;  */
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    /* max-width: 1024px; */
+    /* min-width: 320px; */
+    /* margin: 20px; */
+    border-bottom: solid 2px  rgb(232, 232, 233);
+}
+
+.navbar-list{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item, .nav-item a{
+    list-style: none;
+    text-decoration: none;
+    /* list-style: none; */
+    display: flex;
+    justify-content: center;
+    padding: 2px 5px;
+    /* margin: 2px; */
+    font-size: 1rem;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+    margin: 10px 0px;
+    color: rgb(118, 118, 118);
+}
+
+.nav-item:hover{
+    /* background-color: rgb(237, 88, 13); */
+    /* color: white; */
+    box-shadow: rgb(237, 88, 13) 0px 5px 1px;
+    cursor: pointer;
+}
+
+.navbar-list img{
+    width: 60px;
+    margin-top: 12px; padding: 0;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.body-container p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    border: 1px solid black;
+    font-family: monospace;
+    /* text-align: center; */
+    padding: 20px 40px;
+    margin: 10px;
+    width: 800px;
+    /* height: 500px */
+}
+
+.body-container img{
+    width: 200px;
+    right: 0;
+    bottom: 0;
+}
+/* hobby text */
+h4{
+ color: rgb(118, 118, 118)
+}
+
+.hobby-link:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.hobby-link:hover h4{
+    color: black;
+}
+
+/* .fixed-nav{
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    margin: 0px; 
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+} */
+/* 
+.fixed-nav.show{
+    opacity: 1;
+} */
+.interest-container{
+    display: flex;
+    justify-content:start;
+    /* margin-bottom: 50px; */
+    max-width: 100vw;
+    overflow: hidden;
+}
+.interest-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.contact-link-container{
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(156, 171, 197, 0.348);  
+    width: 600px;
+    /* height: 600px; */
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.contact-link li{
+    list-style: none;
+    background-color: white;
+    border-radius: 100px;
+    width: 400px;
+    padding: 5px;
+}
+
+.contact-link li:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}

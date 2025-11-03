@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Home page</title>
+</head>
+<!-- let body have vh 100 -->
+<body class="d-flex flex-column min-vh-100">
+    <!-- container fills available space -->
+    <div class="container-fluid flex-grow-1 d-flex flex-column">
+        <header>
+            <nav class="navbar"> 
+                <ul class="navbar-list">
+                    <!-- logo -->
+                    <img src="assets/swag_logo.png">
+                    <!-- nav items -->
+                    <li class="nav-item">
+                        <a href="index.html"> HOME </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hobbies.html"> HOBBIES </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="interests.html"> INTERESTS </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="experience.html"> EXPERIENCE </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html"> CONTACT </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="banner-container position-relative">
+                <div class="banner"> 
+                    <img id="banner-line" src="assets/banner_line.png" alt="Banner">
+                    <img id="banner-heart-l" src="assets/banner_heart.png"> 
+                    <img id="banner-heart-r" src="assets/banner_heart.png">
+                </div>
+
+                <h2 class="text-center"> Home page</h2>
+            </div>
+        </header>
+
+        <div class="body-container position-relative">
+            <!-- <img src="assets/frame.png" class=" position-absolute"> -->
+                <p style="margin-bottom: 100px; padding-bottom: 100px;"> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet placeat sed, natus, labore, architecto minus optio illum mollitia debitis quis illo accusamus laboriosam asperiores perferendis assumenda? Maxime, aut impedit. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum enim beatae eos qui tempore ex neque sint ipsum veritatis eum, incidunt expedita totam unde similique, ratione obcaecati provident sit?
+                </p>
+        </div>
+        
+
+        <footer class="mt-auto">
+            <div class = "banner-container" >
+            <nav class="position-absolute" style="bottom: 95px;">
+                <ul class="pagination justify-content-center" > 
+                    <li class="page-item disabled"> 
+                        <a class="page-link" href="index.html"> 0 </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="hobbies.html"> 1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="interests.html"> 2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="experience.html"> 3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="contact.html"> 4</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="assets/banner_line.png">
+        </div>
+        </footer>
+
+    </div>
+</body>
+</html>
